@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: frida
+    versions:
+    - 14.2.10
+    - 14.2.11
+    - 14.2.12
+    - 14.2.13
+    - 14.2.14
+    - 14.2.15
+    - 14.2.16
+    - 14.2.8
+    - 14.2.9
+  - dependency-name: colorlog
+    versions:
+    - 4.7.2
+    - 4.8.0
+  - dependency-name: django
+    versions:
+    - 3.1.5
+    - 3.1.6
+  - dependency-name: google-play-scraper
+    versions:
+    - 0.1.2
+  - dependency-name: lxml
+    versions:
+    - 4.6.2
+  - dependency-name: shelljob
+    versions:
+    - 0.6.2
